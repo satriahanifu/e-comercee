@@ -1,0 +1,1137 @@
+{
+	"info": {
+		"_postman_id": "3372502a-943a-458b-b36d-9aa976308d9f",
+		"name": "SATRIA-BIG-PROJECT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9344602"
+	},
+	"item": [
+		{
+			"name": "AUTH",
+			"item": [
+				{
+					"name": "REGISTER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "angga",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "angga",
+									"type": "text"
+								},
+								{
+									"key": "fullname",
+									"value": "Angga Pratama",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "angganix@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "customer",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LOGIN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "satria",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "satria",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "LIST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "tes",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "tes",
+									"type": "text"
+								},
+								{
+									"key": "fullname",
+									"value": "User Tes",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "tes@gg.com",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "customer",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/user/9e98acee-987d-41fc-824f-024f169bfca6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"9e98acee-987d-41fc-824f-024f169bfca6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "gege",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "gege",
+									"type": "text"
+								},
+								{
+									"key": "fullname",
+									"value": "tes updaste gege",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "gege@gg.com",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "admin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/user/9e98acee-987d-41fc-824f-024f169bfca6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"9e98acee-987d-41fc-824f-024f169bfca6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/user/9e98acee-987d-41fc-824f-024f169bfca6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"9e98acee-987d-41fc-824f-024f169bfca6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CUSTOMER ADDRESS",
+			"item": [
+				{
+					"name": "LIST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/address",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Alamat Rumah",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+									"type": "text"
+								},
+								{
+									"key": "primary",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/address",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/address/2ffcf708-dcf4-401c-b043-006597634f97",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"address",
+								"2ffcf708-dcf4-401c-b043-006597634f97"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Alamat Rumah",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Jl. Rawa Bengkel No. 113 D, Cengkareng Jakarta Barat",
+									"type": "text"
+								},
+								{
+									"key": "primary",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/address/ae1d5d7d-7019-41b7-a155-db23f4f3bc29",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"address",
+								"ae1d5d7d-7019-41b7-a155-db23f4f3bc29"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/address/db4efe74-add3-44e1-8e85-058bb3e4e2cb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"address",
+								"db4efe74-add3-44e1-8e85-058bb3e4e2cb"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CATEGORY",
+			"item": [
+				{
+					"name": "LIST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "bar bar",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/category/d2033812-e324-430a-9a43-39e44b94cc06",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"category",
+								"d2033812-e324-430a-9a43-39e44b94cc06"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "ke update",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/category/d2033812-e324-430a-9a43-39e44b94cc06",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"category",
+								"d2033812-e324-430a-9a43-39e44b94cc06"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/category/d2033812-e324-430a-9a43-39e44b94cc06",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"category",
+								"d2033812-e324-430a-9a43-39e44b94cc06"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PAYMENT",
+			"item": [
+				{
+					"name": "LIST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/payment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "bankName",
+									"value": "BNI",
+									"type": "text"
+								},
+								{
+									"key": "accountName",
+									"value": "Satria Hanif",
+									"type": "text"
+								},
+								{
+									"key": "accountNumber",
+									"value": "1234-5678-9112-2232",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/payment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/payment/b99440ee-df19-4963-876d-f76f183621bb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"payment",
+								"b99440ee-df19-4963-876d-f76f183621bb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "bankName",
+									"value": "Muamalat",
+									"type": "text"
+								},
+								{
+									"key": "accountName",
+									"value": "Babahong",
+									"type": "text"
+								},
+								{
+									"key": "accountNumber",
+									"value": "2932932-32-4-23-2-3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/payment/b99440ee-df19-4963-876d-f76f183621bb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"payment",
+								"b99440ee-df19-4963-876d-f76f183621bb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/payment/b99440ee-df19-4963-876d-f76f183621bb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"payment",
+								"b99440ee-df19-4963-876d-f76f183621bb"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SHIPMENT",
+			"item": [
+				{
+					"name": "LIST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/shipment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"shipment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Ninja",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/shipment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"shipment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/shipment/776564bf-1372-45c5-9f54-fa8bb8396d5b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"shipment",
+								"776564bf-1372-45c5-9f54-fa8bb8396d5b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "bar bar ",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/shipment/776564bf-1372-45c5-9f54-fa8bb8396d5b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"shipment",
+								"776564bf-1372-45c5-9f54-fa8bb8396d5b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/shipment/776564bf-1372-45c5-9f54-fa8bb8396d5b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"shipment",
+								"776564bf-1372-45c5-9f54-fa8bb8396d5b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PRODUCT",
+			"item": [
+				{
+					"name": "LIST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "skdjfs",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "sodkjfowkef",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "size",
+									"value": "xl",
+									"type": "text"
+								},
+								{
+									"key": "categoryId",
+									"value": "0bec8a61-6803-4e9f-921c-8ec0e8cd060c",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/angga/OneDrive/Gambar/Saved Pictures/miku1.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/product/5a6aac13-ea8a-402f-99fc-97847b3d374b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"product",
+								"5a6aac13-ea8a-402f-99fc-97847b3d374b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "bar bar",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "test update",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "null",
+									"type": "text"
+								},
+								{
+									"key": "categoryId",
+									"value": "sdkfjowkef",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/product/63cb1cdd-8559-42ae-bb12-870c07c7c4b1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"product",
+								"63cb1cdd-8559-42ae-bb12-870c07c7c4b1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/product/355af3d0-6350-47ec-8080-e2468e8b329f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"product",
+								"355af3d0-6350-47ec-8080-e2468e8b329f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ORDER",
+			"item": [
+				{
+					"name": "ORDER LIST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"paymentId\": \"e89770c7-7575-439b-8316-e48e240f3adb\",\r\n    \"shipmentId\": \"b12ddbf9-be32-463a-9c2a-cb86e0075858\",\r\n    \"addressId\": \"b23db6cb-55c6-4181-ba1b-41f15cfca8cd\",\r\n    \"detailorders\": [\r\n        {\r\n            \"id\": \"68a07537-db24-4e3f-82a9-1f540d93d6c6\",\r\n            \"name\": \"Trail Hiking Shoe\",\r\n            \"description\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\r\n            \"price\": 225000,\r\n            \"stock\": 50,\r\n            \"qty\": 1,\r\n            \"size\": \"l\",\r\n            \"image\": \"https://media.wired.com/photos/60149f34056378f4af9cf9f1/191:100/w_2580,c_limit/Gear-Topo-Athletic-Ultraventure-Pro.jpg\",\r\n            \"categoryid\": \"0bec8a61-6803-4e9f-921c-8ec0e8cd060c\",\r\n            \"createdAt\": \"2022-05-22T15:57:32.000Z\",\r\n            \"updatedAt\": \"2022-05-22T15:57:32.000Z\",\r\n            \"categoryId\": \"0bec8a61-6803-4e9f-921c-8ec0e8cd060c\",\r\n            \"category\": {\r\n                \"id\": \"0bec8a61-6803-4e9f-921c-8ec0e8cd060c\",\r\n                \"name\": \"Sepatu\",\r\n                \"createdAt\": \"2022-05-22T15:27:40.000Z\",\r\n                \"updatedAt\": \"2022-05-22T15:27:40.000Z\"\r\n            }\r\n        },\r\n        {\r\n            \"id\": \"4501a298-f6de-4125-ac02-c906ba0d32ae\",\r\n            \"name\": \"T-Shirt Handy\",\r\n            \"description\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\r\n            \"price\": 45000,\r\n            \"stock\": 50,\r\n            \"qty\": 2,\r\n            \"size\": \"s\",\r\n            \"image\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Blue_Tshirt.jpg/220px-Blue_Tshirt.jpg\",\r\n            \"categoryid\": \"482bf6c7-a4ed-49fe-ba32-6f3be676cd32\",\r\n            \"createdAt\": \"2022-05-22T15:50:06.000Z\",\r\n            \"updatedAt\": \"2022-05-22T15:50:06.000Z\",\r\n            \"categoryId\": \"482bf6c7-a4ed-49fe-ba32-6f3be676cd32\",\r\n            \"category\": {\r\n                \"id\": \"482bf6c7-a4ed-49fe-ba32-6f3be676cd32\",\r\n                \"name\": \"Baju\",\r\n                \"createdAt\": \"2022-05-22T15:27:25.000Z\",\r\n                \"updatedAt\": \"2022-05-22T15:27:25.000Z\"\r\n            }\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ORDER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/order/aac02e6f-1862-4a2f-8b47-7b17160ced34",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"order",
+								"aac02e6f-1862-4a2f-8b47-7b17160ced34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPLOAD BUKTI BAYAR",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "buktiBayar",
+									"type": "file",
+									"src": "/C:/Users/angga/OneDrive/Gambar/Saved Pictures/spy-x-family-new-trailer-thumbnail.webp"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/order/aac02e6f-1862-4a2f-8b47-7b17160ced34/buktiBayar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"order",
+								"aac02e6f-1862-4a2f-8b47-7b17160ced34",
+								"buktiBayar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE STATUS",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "status",
+									"value": "paid",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/order/aac02e6f-1862-4a2f-8b47-7b17160ced34/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"order",
+								"aac02e6f-1862-4a2f-8b47-7b17160ced34",
+								"status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiYzNkNDdjMTgtZGJjYy00YzVlLWE3ODktYjM1NjczOTdkYTQwIiwidXNlcm5hbWUiOiJzYXRyaWEiLCJwYXNzd29yZCI6IiQyYiQxMiR4akZyQm5pSlplZUFhSGlnSG5rUXBlcW9GNGx2T3lOZG5ZT2U1V2FPeEhERHdQbGdCNFlCaSIsImZ1bGxuYW1lIjoiSGFuaWYgU2F0cmlhIiwiZW1haWwiOiJzYXRyaWFAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiY3JlYXRlZEF0IjoiMjAyMi0wNS0yMlQxNToyMDowNC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMi0wNS0yMlQxNToyMDowNC4wMDBaIn0sImlhdCI6MTY1MzMyOTUwMywiZXhwIjoxNjUzNDE1OTAzfQ.JowSrI-cIZaNyMWy9AACnuB6G5qJ1tgyQcQSXIHgV9k",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
